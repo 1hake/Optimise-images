@@ -1,0 +1,11 @@
+# .gitignore placeholder
+# Note: You would typically add actual .icns and .png files here for production
+# For now, these are placeholder files that electron-builder will skip gracefully
+
+# Assets needed:
+# - icon.icns (512x512 icon for macOS)
+# - dmg-background.png (540x380 DMG background image)
+
+# You can generate these using:
+# - Icon: Use an online converter or macOS's Icon Composer
+# - DMG Background: Create a 540x380 PNG with your app branding

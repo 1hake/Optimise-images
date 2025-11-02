@@ -1,0 +1,41 @@
+appId: com.example.webpoptimizer
+productName: WebP Optimizer
+copyright: Copyright © 2024 WebP Optimizer
+
+directories:
+  output: release
+  buildResources: assets
+
+files:
+  - dist/**/*
+  - node_modules/**/*
+  - package.json
+
+mac:
+  category: public.app-category.graphics-design
+  target:
+    - target: dmg
+      arch: [x64, arm64]
+  entitlements: entitlements.mac.plist
+  entitlementsInherit: entitlements.mac.plist
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  identity: null
+
+dmg:
+  artifactName: "${productName}-${version}-mac-${arch}.${ext}"
+  title: "${productName} ${version}"
+  background: assets/dmg-background.png
+  window:
+    width: 540
+    height: 380
+  contents:
+    - x: 140
+      y: 200
+      type: file
+    - x: 400
+      y: 200
+      type: link
+      path: /Applications
+
+publish: null
