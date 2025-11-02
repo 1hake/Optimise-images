@@ -1,8 +1,8 @@
-# WebP Optimizer
+# Image Optimizer
 
-A minimal, fast macOS desktop app built with Electron and TypeScript for converting images to WebP format with optimal compression.
+A minimal, fast macOS desktop app built by **onehake** for optimizing images with WebP and PNG compression.
 
-![WebP Optimizer Screenshot](screenshot.png)
+![Image Optimizer Screenshot](screenshot.png)
 
 ## Features
 
@@ -36,8 +36,8 @@ A minimal, fast macOS desktop app built with Electron and TypeScript for convert
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/webp-optimizer.git
-cd webp-optimizer
+git clone https://github.com/1hake/Optimise-images.git
+cd Optimise-images
 
 # Install dependencies
 npm install
@@ -67,7 +67,7 @@ Built applications will be in the `release/` directory.
 
 ### Basic Conversion
 
-1. **Open the app** - Launch WebP Optimizer
+1. **Open the app** - Launch Image Optimizer
 2. **Add images** - Drag & drop files or click "Choose Images"
 3. **Convert** - Processing starts automatically with smart defaults
 4. **Access results** - Use "Reveal in Finder" or "Copy Path" buttons
@@ -303,9 +303,17 @@ npm install --save-dev @types/node @types/electron
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+---
 
-- **Sharp** - Fantastic image processing library
-- **Electron** - Cross-platform desktop framework
-- **React** - UI framework
+## Built by onehake
+
+**Developer:** [onehake](https://github.com/1hake)  
+**Repository:** [Optimise-images](https://github.com/1hake/Optimise-images)
+
+### Technologies Used
+- **Sharp** - High-performance image processing
+- **Electron** - Cross-platform desktop framework  
+- **React** - Modern UI framework
 - **Tailwind CSS** - Utility-first styling
+
+*Image Optimizer - A minimal, fast macOS desktop app for image optimization*

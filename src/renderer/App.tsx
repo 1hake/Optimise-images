@@ -1,3 +1,8 @@
+/**
+ * Image Optimizer - React App Component
+ * Built by onehake (https://github.com/1hake)
+ */
+
 import React, { useState, useEffect, useRef } from 'react';
 import toast from 'react-hot-toast';
 import type { ConversionSettings, ConversionResult, ConversionProgress } from '../main/preload';
@@ -315,8 +320,8 @@ const App: React.FC = () => {
                     // Elegant Drop Zone
                     <div
                         className={`h-full border-2 border-dashed rounded-2xl flex flex-col items-center justify-center transition-all duration-300 ${dragOver
-                                ? 'drag-over border-gray-900/30 bg-gray-50/50 scale-[0.98]'
-                                : 'border-gray-300/60 hover:border-gray-400/70 hover:bg-gray-50/30'
+                            ? 'drag-over border-gray-900/30 bg-gray-50/50 scale-[0.98]'
+                            : 'border-gray-300/60 hover:border-gray-400/70 hover:bg-gray-50/30'
                             }`}
                         onDrop={handleDrop}
                         onDragOver={(e) => {
@@ -412,8 +417,8 @@ const App: React.FC = () => {
                                                                                 {formatBytes(file.result.inputSize!)} → {formatBytes(file.result.outputSizes.webp)}
                                                                             </span>
                                                                             <div className={`px-2 py-0.5 rounded-full font-medium ${(file.result.savings?.webp || 0) > 0
-                                                                                    ? 'bg-green-100 text-green-800'
-                                                                                    : 'bg-gray-100 text-gray-600'
+                                                                                ? 'bg-green-100 text-green-800'
+                                                                                : 'bg-gray-100 text-gray-600'
                                                                                 }`}>
                                                                                 {(file.result.savings?.webp || 0) > 0 ? `-${file.result.savings?.webp}%` : 'No savings'}
                                                                             </div>
@@ -428,8 +433,8 @@ const App: React.FC = () => {
                                                                                 {formatBytes(file.result.inputSize!)} → {formatBytes(file.result.outputSizes.png)}
                                                                             </span>
                                                                             <div className={`px-2 py-0.5 rounded-full font-medium ${(file.result.savings?.png || 0) > 0
-                                                                                    ? 'bg-green-100 text-green-800'
-                                                                                    : 'bg-gray-100 text-gray-600'
+                                                                                ? 'bg-green-100 text-green-800'
+                                                                                : 'bg-gray-100 text-gray-600'
                                                                                 }`}>
                                                                                 {(file.result.savings?.png || 0) > 0 ? `-${file.result.savings?.png}%` : 'No savings'}
                                                                             </div>

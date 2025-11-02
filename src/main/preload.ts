@@ -1,3 +1,8 @@
+/**
+ * Image Optimizer - Preload Script
+ * Built by onehake (https://github.com/1hake)
+ */
+
 import { contextBridge, ipcRenderer } from 'electron';
 
 // Types for IPC communication

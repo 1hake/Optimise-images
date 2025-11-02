@@ -1,12 +1,12 @@
 {
-    "name": "webp-optimizer",
+    "name": "image-optimizer",
     "version": "1.0.0",
-    "description": "A minimal macOS desktop app to convert images to WebP format",
+    "description": "A minimal macOS desktop app to optimize images",
     "main": "dist/main/main.js",
-    "homepage": "https://github.com/1hake/webp-optimizer",
+    "homepage": "https://github.com/1hake/Optimise-images",
     "author": {
-        "name": "WebP Optimizer",
-        "email": "contact@webpoptimizer.com"
+        "name": "onehake",
+        "email": "hello@onehake.com"
     },
     "scripts": {
         "dev": "concurrently \"npm run dev:vite\" \"npm run dev:main\" \"npm run dev:electron\"",
@@ -22,10 +22,12 @@
     },
     "keywords": [
         "electron",
-        "webp",
         "image",
         "optimization",
-        "macos"
+        "webp",
+        "png",
+        "macos",
+        "onehake"
     ],
     "license": "MIT",
     "devDependencies": {
@@ -55,7 +57,7 @@
         "react-hot-toast": "^2.4.1"
     },
     "build": {
-        "appId": "com.example.imageoptimizer",
+        "appId": "com.onehake.imageoptimizer",
         "productName": "Image Optimizer",
         "directories": {
             "output": "release"
@@ -70,9 +72,13 @@
             "target": [
                 {
                     "target": "dmg",
-                    "arch": ["x64", "arm64"]
+                    "arch": [
+                        "x64",
+                        "arm64"
+                    ]
                 }
             ],
+            "icon": "assets/icon.icns",
             "identity": null
         },
         "dmg": {

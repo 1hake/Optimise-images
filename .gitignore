@@ -113,7 +113,7 @@ temp/
 # Local development
 .local
 
-# Asset cache
-assets/*.icns
+# Asset cache (allow icon.icns)
 assets/*.png
+!assets/icon.icns
 !assets/.gitkeep

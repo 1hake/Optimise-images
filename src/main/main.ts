@@ -1,3 +1,9 @@
+/**
+ * Image Optimizer - Main Process
+ * Built by onehake (https://github.com/1hake)
+ * A minimal macOS desktop app for image optimization
+ */
+
 import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron';
 import path from 'path';
 import fs from 'fs/promises';
